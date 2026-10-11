@@ -1,0 +1,260 @@
+{
+  "rq2": {
+    "fitGains": [
+      {
+        "dimension": "Explanation Sufficiency",
+        "gain": 0.85
+      },
+      {
+        "dimension": "Non-redundancy",
+        "gain": 0.41
+      },
+      {
+        "dimension": "Clarity",
+        "gain": 0.42
+      },
+      {
+        "dimension": "Cognitive Relevance",
+        "gain": 1.06
+      },
+      {
+        "dimension": "Task Usefulness",
+        "gain": 0.88
+      }
+    ],
+    "metrics": [
+      {
+        "label": "Accuracy",
+        "value": 83.0
+      },
+      {
+        "label": "Macro-F1",
+        "value": 83.4
+      },
+      {
+        "label": "End-to-end Cognitive Alignment",
+        "value": 78.1
+      }
+    ],
+    "confusion": [
+      {
+        "label": "Novice",
+        "count": [1594, 300, 26],
+        "percent": [83.0, 15.6, 1.4],
+        "total": 1920
+      },
+      {
+        "label": "Regular",
+        "count": [230, 2099, 231],
+        "percent": [9.0, 82.0, 9.0],
+        "total": 2560
+      },
+      {
+        "label": "Expert",
+        "count": [26, 275, 1619],
+        "percent": [1.4, 14.3, 84.3],
+        "total": 1920
+      }
+    ]
+  },
+  "rq3": [
+    {
+      "method": "DevHound",
+      "model": "gpt-5.6-sol",
+      "correct": 362,
+      "spurious": 20,
+      "missed": 14,
+      "precision": 0.948,
+      "recall": 0.963,
+      "f1": 0.955,
+      "cost": 46.79
+    },
+    {
+      "method": "DevHound",
+      "model": "gpt-5.6-terra",
+      "correct": 364,
+      "spurious": 15,
+      "missed": 12,
+      "precision": 0.96,
+      "recall": 0.968,
+      "f1": 0.964,
+      "cost": 23.78
+    },
+    {
+      "method": "DevHound",
+      "model": "claude-sonnet-5",
+      "correct": 352,
+      "spurious": 29,
+      "missed": 24,
+      "precision": 0.924,
+      "recall": 0.936,
+      "f1": 0.93,
+      "cost": 23.39
+    },
+    {
+      "method": "DevHound",
+      "model": "deepseek-v4-1-flash",
+      "correct": 342,
+      "spurious": 42,
+      "missed": 34,
+      "precision": 0.891,
+      "recall": 0.91,
+      "f1": 0.9,
+      "cost": 3.45
+    },
+    {
+      "method": "DevHound",
+      "model": "glm-5.3-flash",
+      "correct": 350,
+      "spurious": 24,
+      "missed": 26,
+      "precision": 0.936,
+      "recall": 0.931,
+      "f1": 0.933,
+      "cost": 1.36
+    },
+    {
+      "method": "DevHound",
+      "model": "llama-3.1-8b-instruct",
+      "correct": 292,
+      "spurious": 89,
+      "missed": 84,
+      "precision": 0.766,
+      "recall": 0.777,
+      "f1": 0.771,
+      "cost": 0.31
+    },
+    {
+      "method": "w/o Validation",
+      "model": "gpt-5.6-sol",
+      "correct": 361,
+      "spurious": 95,
+      "missed": 15,
+      "precision": 0.792,
+      "recall": 0.96,
+      "f1": 0.868,
+      "cost": 45.14
+    },
+    {
+      "method": "w/o Validation",
+      "model": "gpt-5.6-terra",
+      "correct": 362,
+      "spurious": 106,
+      "missed": 14,
+      "precision": 0.774,
+      "recall": 0.963,
+      "f1": 0.858,
+      "cost": 22.96
+    },
+    {
+      "method": "w/o Validation",
+      "model": "claude-sonnet-5",
+      "correct": 353,
+      "spurious": 96,
+      "missed": 23,
+      "precision": 0.786,
+      "recall": 0.939,
+      "f1": 0.856,
+      "cost": 22.56
+    },
+    {
+      "method": "w/o Validation",
+      "model": "deepseek-v4-1-flash",
+      "correct": 335,
+      "spurious": 147,
+      "missed": 41,
+      "precision": 0.695,
+      "recall": 0.891,
+      "f1": 0.781,
+      "cost": 3.33
+    },
+    {
+      "method": "w/o Validation",
+      "model": "glm-5.3-flash",
+      "correct": 330,
+      "spurious": 141,
+      "missed": 46,
+      "precision": 0.701,
+      "recall": 0.878,
+      "f1": 0.779,
+      "cost": 1.31
+    },
+    {
+      "method": "w/o Validation",
+      "model": "llama-3.1-8b-instruct",
+      "correct": 270,
+      "spurious": 168,
+      "missed": 106,
+      "precision": 0.616,
+      "recall": 0.718,
+      "f1": 0.663,
+      "cost": 0.29
+    },
+    {
+      "method": "w/o Task",
+      "model": "gpt-5.6-sol",
+      "correct": 300,
+      "spurious": 44,
+      "missed": 76,
+      "precision": 0.872,
+      "recall": 0.798,
+      "f1": 0.833,
+      "cost": 29.7
+    },
+    {
+      "method": "w/o Task",
+      "model": "gpt-5.6-terra",
+      "correct": 288,
+      "spurious": 49,
+      "missed": 88,
+      "precision": 0.855,
+      "recall": 0.766,
+      "f1": 0.808,
+      "cost": 15.1
+    },
+    {
+      "method": "w/o Task",
+      "model": "claude-sonnet-5",
+      "correct": 294,
+      "spurious": 52,
+      "missed": 82,
+      "precision": 0.85,
+      "recall": 0.782,
+      "f1": 0.814,
+      "cost": 14.81
+    },
+    {
+      "method": "w/o Task",
+      "model": "deepseek-v4-1-flash",
+      "correct": 274,
+      "spurious": 68,
+      "missed": 102,
+      "precision": 0.801,
+      "recall": 0.729,
+      "f1": 0.763,
+      "cost": 2.23
+    },
+    {
+      "method": "w/o Task",
+      "model": "glm-5.3-flash",
+      "correct": 267,
+      "spurious": 65,
+      "missed": 109,
+      "precision": 0.804,
+      "recall": 0.71,
+      "f1": 0.754,
+      "cost": 0.89
+    },
+    {
+      "method": "w/o Task",
+      "model": "llama-3.1-8b-instruct",
+      "correct": 200,
+      "spurious": 110,
+      "missed": 176,
+      "precision": 0.645,
+      "recall": 0.532,
+      "f1": 0.583,
+      "cost": 0.21
+    }
+  ]
+}
